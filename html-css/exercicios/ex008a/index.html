@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        mark {
+            background-color: rgb(164, 207, 83);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Semântica</h1>
+    <h2>Destaques das palavras</h2>
+    <p>Aqui está um <b>trecho destacado com uma tag &quot;b&quot;</b>. Esta tag, porém, é não-semântica, porque não possui qualquer significado.</p>
+    <p>Já aqui está um <strong>trecho destacado com uma tag &quot;strong&quot;</strong>. Esta sim é uma tag semântica porque possui significado.</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark>
+        um texto marcado</mark> usando a tag &quot;MARK&quot;.</p>
+        <p>Neste caso, a cor padrão é "amarela".</p>
+        <p>Se quiser outras cores, tenho que fazer isso em CSS, mas há como fazê-lo dentro das próprias tags, através do parâmetro específico &quot;style&quot;.</p>
+        <p>Exemplo:</p>
+        <p style="background-color: rgb(0, 255, 115);">Esta linha toda está usando outra cor, através do parâmetro &quot;style&quot;.</p>
+        <p>Neste parágrafo, temos um <mark>
+            novo texto marcado</mark> no final.</p>
+        <p>Como se percebe, ele <em>não herda</em> as mesmas características da marcação anterior (linha acima).</p>
+        <p>Isso acontece, porque foi usada uma marcação pontual para a linha.</p>
+        <p>Porém, e se tivermos dezenas de marcações específicas (com determinada característica diferente do padrão da tag &quot;mark&quot;) no nosso texto?</p>
+        <p>Bem, neste caso, é melhor criarmos um <strong>seletor</strong> no <em>head</em> que contemplará todas as marcações (vide código).</p>
+        <h2>Texto Grande e Pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> um <small>texto pequeno</small> neste parágrafo.</p>
+        <p>Lembrando, porém, que a tag &quot;big&quot;, como vimos, está <em>obsoleta</em> (em vermelho no código).</p>
+        <h2>Texto Deletado</h2>
+        <p>Podemos marcar um <del>texto como excluído</del>, para indicar que ele deve ser lido, mas não considerado.</p>
+        <h2>Texto Inserido</h2>
+        <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+        <p>Existe também a tag &quot;u&quot;, que também, <u>sublinha</u>, porém é uma <strong>tag não semântica.</strong></p>
+        <h2>Texto Sobrescrito</h2>
+        <p>Para inserir coisas do tipo: x<sup>20</sup>+3.</p>
+        <h2>Texto Subscrito</h2>
+        <p>Para inserir coisas do tipo: H<sub>2</sub>O.</p>
+</body>
+</html>
